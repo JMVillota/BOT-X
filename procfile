@@ -1,1 +1,1 @@
-web: gunicorn BotIQ.wsgi --log-file
+web: gunicorn BotIQ.wsgi
