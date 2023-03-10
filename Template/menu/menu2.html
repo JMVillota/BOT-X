@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+</head>
+
+<body>
+    <h1>Menú</h1>
+    <form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Cerrar sesión">
+    </form>
+    <h1>Opción</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label>Elegir cuenta:</label><br>
+        <input type="radio" id="account_practice" name="account" value="practice">
+        <label for="account_practice">Entrenamiento</label><br>
+        <input type="radio" id="account_real" name="account" value="real">
+        <label for="account_real">Real</label><br><br>
+
+        <label>Elija el tipo de opción:</label><br>
+        <input type="radio" id="option_binary" name="option" value="binary">
+        <label for="option_binary">Binario</label><br>
+        <input type="radio" id="option_digital" name="option" value="digital">
+        <label for="option_digital">Digital</label><br><br>
+
+        <label>Elige mayoría o minoría:</label><br>
+        <input type="radio" id="favourable_majority" name="favourable" value="majority">
+        <label for="favourable_majority">Mayoría</label><br>
+        <input type="radio" id="favourable_minority" name="favourable" value="minority">
+        <label for="favourable_minority">Minoría</label><br><br>
+
+        <label for="value">Valor inicial:</label>
+        <input type="number" id="value" name="value" min="1" max="999" value="2"><br>
+
+        <label for="stop_win">Detener al Ganar:</label>
+        <input type="number" id="stop_win" name="stop_win" min="1" max="999" value="10"><br>
+
+        <label for="stop_loss">Detener al perder:</label>
+        <input type="number" id="stop_loss" name="stop_loss" min="1" max="999" value="20"><br>
+
+        <label for="martingale">Martingala:</label>
+        <input type="number" id="martingale" name="martingale" min="0" max="9" value="0"><br>
+
+        <label for="exchange">Ingrese un PAR abierto:</label><br>
+        <input type="text" id="exchange" name="exchange"><br><br>
+
+        <input type="submit" value="Funcionar">
+    </form>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</body>
+
+</html>

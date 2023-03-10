@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center pt-5 mt-5 m-1">
+            <div class="col-md-6 col-sm-8 col-xl-4 col-lg-5 formulario">
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="form-group text-center pt-3">
+                        <h1 class="text-light">INICIAR SESIÓN</h1>
+                    </div>
+                    <div class="form-group mx-sm-4 pt-3">
+                        <input type="text" id="email" name="email" class="form-control" placeholder="Ingrese su Usuario">
+                    </div>
+                    <div class="form-group mx-sm-4 pb-3">
+                        <input type="password" id="password" name="password" class="form-control" placeholder="Ingrese su Contraseña">
+                    </div>
+
+                    <div class="btn-neon ">
+                        <span id="span1"></span>
+                        <span id="span2"></span>
+                        <span id="span3"></span>
+                        <span id="span4"></span>
+                        <input type="submit" class=" btn-neon ingresar" value="LOGIN">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- <form method="POST">
+	{% csrf_token %}
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<label>Elegir cuenta:</label><br>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" id="account_practice" name="account" value="practice">
+					<label class="form-check-label" for="account_practice">Entrenamiento</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" id="account_real" name="account" value="real">
+					<label class="form-check-label" for="account_real">Real</label>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label>Elija el tipo de opción:</label><br>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" id="option_binary" name="option" value="binary">
+					<label class="form-check-label" for="option_binary">Binario</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" id="option_digital" name="option" value="digital">
+					<label class="form-check-label" for="option_digital">Digital</label>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label>Elige mayoría o minoría:</label><br>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" id="favourable_majority" name="favourable" value="majority">
+					<label class="form-check-label" for="favourable_majority">Mayoría</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" id="favourable_minority" name="favourable" value="minority">
+					<label class="form-check-label" for="favourable_minority">Minoría</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="form-group">
+				<label for="value">Valor inicial:</label>
+				<input type="number" id="value" name="value" min="1" max="999" value="2" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="stop_win">Detener al Ganar:</label>
+				<input type="number" id="stop_win" name="stop_win" min="1" max="999" value="10" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="stop_loss">Detener al perder:</label>
+				<input type="number" id="stop_loss" name="stop_loss" min="1" max="999" value="20" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="martingale">Martingala:</label>
+				<input type="number" id="martingale" name="martingale" min="0" max="9" value="0" class="form-control">
+			</div>
+            <div class="form-group">
+                <label for="exchange">Ingrese un PAR abierto:</label>
+                <input type="text" id="exchange" name="exchange" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Empezar
+                </button>
+            </div>
+        </div>
+    </div>
+</form> -->

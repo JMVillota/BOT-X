@@ -1,0 +1,161 @@
+body {
+    background-image: url("/static/img/logo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 250%;
+    margin: 0 auto;
+}
+
+.formulario {
+    background: rgba(0, 0, 0, .6);
+    padding: 20px;
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    color: white;
+    margin: 10 auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.ingresar {
+    background: #222A3F;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700!important;
+    color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    transition: 0.5s ease-in;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+}
+
+.ingresar2 {
+    background: #222A3F;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700!important;
+    color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    transition: 0.5s ease-in;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+}
+
+.ingresar2:hover {
+    color: white;
+    background: #2c38a8;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+.ingresar:hover {
+    color: white;
+    background: #34a82c;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+.btn-neon {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+}
+
+.btn-neon span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ab7a42);
+    animation: span1 2s linear infinite;
+}
+
+@keyframes span1 {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+#span2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #4283ab);
+    animation: span2 2s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes span2 {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 100%;
+    }
+}
+
+#span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #9aab42);
+    animation: span3 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span3 {
+    from {
+        right: -100%;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+#span4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #9a42ab);
+    animation: span4 2s linear infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes span4 {
+    from {
+        bottom: -100%;
+    }
+    to {
+        bottom: 100%;
+    }
+}
